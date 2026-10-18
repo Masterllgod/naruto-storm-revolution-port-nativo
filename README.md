@@ -12,7 +12,7 @@
 ![Gráficos](https://img.shields.io/badge/Vulkan-1.1-AC162C?logo=vulkan&logoColor=white)
 ![Estado](https://img.shields.io/badge/estado-em%20desenvolvimento-yellow)
 
-[Sobre](#-sobre) · [Versão do jogo](#-versão-do-jogo-obrigatória) · [Requisitos](#-requisitos) · [Perguntas](#-perguntas-frequentes)
+[Sobre](#-sobre) · [Storm 4 MOD e Modpack V8](#-storm-4-mod-e-modpack-v8) · [Versão do jogo](#-versão-do-jogo-obrigatória) · [Requisitos](#-requisitos) · [Perguntas](#-perguntas-frequentes)
 
 </div>
 
@@ -26,7 +26,7 @@ Este port **não é um emulador de Xbox 360**. O executável do jogo (`default.x
 > **Os pacotes não contêm nenhum arquivo do jogo.** Você precisa da sua **própria cópia** de *Naruto Shippuden: Ultimate Ninja Storm Revolution* para Xbox 360, na versão indicada em [Versão do jogo](#-versão-do-jogo-obrigatória).
 
 > [!NOTE]
-> **Estado: em desenvolvimento.** Os pacotes (APK e Windows) ainda não foram publicados. Este repositório já está organizado com a documentação; os downloads aparecerão na página de **Releases** quando houver uma versão estável.
+> **Estado: em desenvolvimento.** Os pacotes (APK e Windows) ainda não foram publicados. A página de **Releases** traz as notas de cada versão (a v0.6 do Storm 4 MOD, por enquanto, **sem o APK anexado**); os downloads aparecerão lá quando houver uma versão estável.
 
 ### ✨ O que o port oferece
 
@@ -37,6 +37,58 @@ Este port **não é um emulador de Xbox 360**. O executável do jogo (`default.x
 - **Drivers de GPU customizados (Turnip)** em celulares **Snapdragon**, importados pelo menu.
 - Painel de desempenho (FPS, resolução, CPU, GPU e RAM) e botão de enviar log.
 - Versão de **PC** com janela ou tela cheia, teclado e controles de Xbox ou PlayStation.
+
+## 🌀 Storm 4 MOD e Modpack V8
+
+O menu inicial do port (v0.6) foi refeito com o tema do **Sasuke adulto**: o emblema é o Rinnegan com raios de Chidori e um tomoe do Sharingan orbitando, o fundo é uma noite violeta com chamas do Susanoo, e o ícone do app segue o mesmo tema. Os controles na tela e a tela de mapeamento usam as mesmas cores.
+
+<div align="center">
+<img src="docs/screenshots/launcher-storm4mod.png" alt="Menu inicial com o tema do Sasuke" width="720">
+</div>
+
+### O que o menu reconhece
+
+| Pasta do jogo | Como o menu a identifica |
+|---|---|
+| **Storm 4 MOD (2025)** | pasta do mod, com `data/sim/data.cpk` de uns 4 GB; pede a **DLC do mod** |
+| **Revolution original + Modpack V8** | pasta do jogo original com `patchdata/adddata.cpk`; mostra "modpack detectado" |
+| **Revolution original** | `default.xex` do jogo original, sem `patchdata` |
+
+> [!IMPORTANT]
+> Nem o jogo, nem o mod, nem o modpack, nem a DLC fazem parte deste projeto: são de terceiros e **não são distribuídos aqui**. Use a sua própria cópia.
+
+### Onde colocar o `adddata.cpk` do Modpack V8
+
+O modpack é um único arquivo, `patchdata/adddata.cpk`. Ele vai dentro da pasta do **Revolution original** (não da pasta do Storm 4 MOD), ao lado do `Default.xex`:
+
+```
+Pasta do jogo/
+├── Default.xex
+├── data/
+├── nxeart
+├── AvatarAssetPack
+└── patchdata/
+    └── adddata.cpk
+```
+
+No menu, toque em **ESCOLHER PASTA** e escolha essa pasta. Se quiser os personagens liberados, ligue o **Save 100%**.
+
+### DLC do Storm 4 MOD
+
+O quadro **DLC do mod (obrigatória)** instala os dois pacotes "Costume Expansion Data" a partir da pasta que acompanha o mod. Sem eles o menu avisa antes de jogar. A DLC só vale para o Storm 4 MOD, não para o modpack.
+
+### Novidades da v0.6 (resumo)
+
+- Menu e ícone novos (Sasuke) e **visual novo dos controles na tela** e do mapeamento de controles físicos.
+- Reconhece o **Modpack V8** pelo `patchdata/adddata.cpk`.
+- **Save 100%** embutido, que guarda o seu save e o devolve ao desligar.
+- Correção de memória: o jogo lê memória que ele mesmo já liberou, o que derrubava o modpack ao abrir. As páginas liberadas agora só são zeradas e continuam acessíveis.
+
+### Limitações conhecidas
+
+- No **Storm 4 MOD**, 4 personagens da primeira página da seleção continuam bloqueados mesmo com o Save 100% (testado no PC); a causa ainda é investigada.
+- O **Modpack V8** foi testado no PC até a seleção de personagens, não em luta; no celular ainda não foi testado.
+- O visual novo dos controles na tela ainda não foi conferido em um aparelho.
 
 ## 📱 Requisitos
 
