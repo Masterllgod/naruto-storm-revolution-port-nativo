@@ -26,7 +26,7 @@ Este port **não é um emulador de Xbox 360**. O executável do jogo (`default.x
 > **Os pacotes não contêm nenhum arquivo do jogo.** Você precisa da sua **própria cópia** de *Naruto Shippuden: Ultimate Ninja Storm Revolution* para Xbox 360, na versão indicada em [Versão do jogo](#-versão-do-jogo-obrigatória).
 
 > [!NOTE]
-> **Estado: em desenvolvimento.** Os pacotes (APK e Windows) ainda não foram publicados. A página de **Releases** traz as notas de cada versão (a v0.6 do Storm 4 MOD, por enquanto, **sem o APK anexado**); os downloads aparecerão lá quando houver uma versão estável.
+> **Estado: em desenvolvimento.** Os pacotes (APK e Windows) ainda não foram publicados. A página de **Releases** traz as notas de cada versão. O **Storm 4 MOD v0.13 (alpha)** já tem o APK para baixar; é uma versão de testes.
 
 ### ✨ O que o port oferece
 
