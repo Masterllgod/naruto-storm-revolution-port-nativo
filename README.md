@@ -43,6 +43,7 @@ Este app roda o **Storm Revolution original, sem mods**. O *Storm 4 MOD* tem app
 - **Shadow** pequeno no canto da tela com o menu do jogo: tela 16:9/esticar, mostrar FPS, editar botões, ocultar.
 - Menu inicial com o tema do **Pain** (chuva de Amegakure, Rinnegan, nuvens da Akatsuki).
 - **Save 100%** embutido, que guarda o seu save e o devolve ao desligar.
+- **Atualização automática:** ao abrir o menu, o app avisa quando sai versão nova aqui no GitHub e já baixa e instala.
 - **Drivers de GPU customizados (Turnip)** em celulares **Snapdragon**.
 - Painel de desempenho (FPS, resolução, CPU, GPU e RAM) e botão de enviar log.
 
@@ -55,8 +56,7 @@ O APK está na página de **[Releases](../../releases)**.
 3. Abra o app, toque no caminho da pasta embaixo do **JOGAR** para escolher a pasta do jogo e dê a permissão de acesso aos arquivos.
 4. Toque em **JOGAR**.
 
-> [!NOTE]
-> Este app ainda não avisa sozinho quando sai versão nova: confira as **[Releases](../../releases)**.
+A partir da v1.1.2, o app avisa ao abrir o menu quando sai versão nova aqui no GitHub e já baixa e instala.
 
 ## 📱 Requisitos
 
