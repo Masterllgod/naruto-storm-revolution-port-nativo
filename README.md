@@ -43,6 +43,9 @@ Este app roda o **Storm Revolution original, sem mods**. O *Storm 4 MOD* tem app
 - **Shadow** pequeno no canto da tela com o menu do jogo: tela 16:9/esticar, mostrar FPS, editar botões, ocultar.
 - Menu inicial com o tema do **Pain** (chuva de Amegakure, Rinnegan, nuvens da Akatsuki).
 - **Save 100%** embutido, que guarda o seu save e o devolve ao desligar.
+- **Gerar quadros (AMD FG):** Off / 2x / 3x / 4x. O jogo roda a 30 FPS e a tela recebe 60, 90 ou 120 quadros por segundo. Modo **Desempenho** (leve, o mesmo do Storm 4 de PC) ou **Qualidade**, e **Tela (Hz)** Auto / 60 / 90 / 120. Feito sobre o fluxo óptico da AMD adaptado para celular (Mali, Adreno e Xclipse), sem arquivo externo.
+- **Sem congelamentos no ARM:** corrigido o anel de comandos da GPU que travava o jogo depois de alguns minutos (às vezes com o erro `0x0BADF00D`) em celulares e tablets.
+- **Android 11 e 12:** o app não fecha mais ao abrir com a internet ligada.
 - **Atualização automática:** ao abrir o menu, o app avisa quando sai versão nova aqui no GitHub e já baixa e instala.
 - **Drivers de GPU customizados (Turnip)** em celulares **Snapdragon**.
 - Painel de desempenho (FPS, resolução, CPU, GPU e RAM) e botão de enviar log.
@@ -156,6 +159,7 @@ Este projeto só foi possível graças a estes projetos de código aberto:
 - [**SDL 3**](https://github.com/libsdl-org/SDL): janela, entrada e áudio
 - [**FFmpeg**](https://ffmpeg.org): decodificação de áudio XMA
 - [**AMD FidelityFX FSR**](https://github.com/GPUOpen-Effects): escala
+- [**AMD FidelityFX SDK**](https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK) (MIT): fluxo óptico e interpolação da geração de quadros
 - [**libadrenotools**](https://github.com/bylaws/libadrenotools): drivers de GPU customizados no Android
 
 As licenças completas estão em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
